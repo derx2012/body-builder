@@ -1,4 +1,4 @@
-import { getExercise } from '../data/exercises';
+import { EXERCISES } from '../data/exercises';
 import { getWorkout } from '../data/program';
 import { RATING_LABELS } from '../lib/progression';
 import { parseState, type AppState, type Settings } from '../lib/storage';
@@ -66,7 +66,7 @@ export function History({ state, onSettings, onImport }: Props) {
               </div>
               <p className="muted small">
                 {Object.entries(s.ratings)
-                  .map(([id, r]) => `${getExercise(id).name} ${s.targets[id]} — ${RATING_LABELS[r].toLowerCase()}`)
+                  .map(([id, r]) => `${EXERCISES[id]?.name ?? id} ${s.targets[id]} — ${RATING_LABELS[r].toLowerCase()}`)
                   .join(' · ')}
               </p>
             </li>

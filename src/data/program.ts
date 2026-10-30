@@ -83,7 +83,7 @@ export const PROGRAM: Workout[] = [
     main: [
       { exerciseId: 'split-squat', min: 8, max: 10 },
       { exerciseId: 'close-pushups', min: 6, max: 10 },
-      { exerciseId: 'face-pull', min: 12, max: 15 },
+      { exerciseId: 'reverse-fly', min: 10, max: 15 },
       { exerciseId: 'single-leg-bridge', min: 8, max: 10 },
       { exerciseId: 'mountain-climbers', min: 20, max: 30 },
       { exerciseId: 'reverse-crunch', min: 10, max: 12 },
